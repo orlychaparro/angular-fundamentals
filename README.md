@@ -1,3 +1,13 @@
+# Fundmentos de Angular 
+## Curso de Platzi - Angular Basic
+
+Platzi 
+
+https://platzi.com/clases/2478-angular/41036-instalacion-de-angular-cli/
+
+Github
+
+https://github.com/platzi/angular-fundamentals/tree/1-step
 # MyStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
