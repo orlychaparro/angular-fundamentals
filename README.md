@@ -1,5 +1,8 @@
-# Fundmentos de Angular 
-## Curso de Platzi - Angular Basic
+# Fundamentos de Angular 
+## Curso de Platzi - Básico de Angular
+### Mayo 2023 
+## Proyecto creaciòn de Tienda online Parte Frontend 
+# MyStore
 
 Platzi 
 
