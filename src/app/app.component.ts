@@ -18,6 +18,12 @@ export class AppComponent {
   avatar:'https://www.w3schools.com/howto/img_avatar.png'
  }
 
+ names:string[]= ['Nico','Juli','Santi'];
+
+ paises:string[]= ['Paraguay','Argentina','Brasil','Perú'];
+ nuevoPais = '';
+
+newName = '';
  toggleButton(){
   this.btnDisabled = !this.btnDisabled;
  }
@@ -39,6 +45,20 @@ changeName(event: Event){
   const element = event.target as HTMLInputElement;
   this.person.name = element.value
 
+}
+
+addName(){
+  this.names.push(this.newName);
+  this.newName= '';
+}
+
+deleteName(index:number){
+  this.names.splice(index,1);
+}
+
+agregarPais(){
+  this.paises.push(this.nuevoPais);
+  this.nuevoPais = '';
 }
 
 }

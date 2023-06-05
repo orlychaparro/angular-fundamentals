@@ -1,4 +1,33 @@
 
+<h1>Paises *ngFor</h1>
+
+<input type="text" [(ngModel)]="nuevoPais">
+<button (click)="agregarPais()">Agrega País</button>
+<p *ngFor="let pais of paises;index as ind">
+  {{ind}} - {{pais}} </p>
+
+
+<h1>*ngFor</h1>
+<input type="text" required [(ngModel)]="newName" >
+<button (click)="addName()">Add name</button>
+<ul>
+  <li *ngIf="names.length === 0">No hay nombres</li>
+  <li *ngFor="let name of names; index as i">
+    {{i}} - {{name}}
+    <button (click)="deleteName(i)">Delete</button>
+  </li>
+</ul>
+
+<h1>*ngIf ejemplos</h1>
+<input type="text" required [(ngModel)]="person.name" >
+<p *ngIf="person.name === 'nicolas'">Soy Nicolás</p>
+<p *ngIf="person.name === 'julian' && person.age === 18; else myBlock">Soy Julián</p>
+
+<ng-template  #myBlock>
+  <p>Bloque else</p>
+</ng-template>
+
+<hr>
 <h1>Ng Model</h1>
 <p>Nombre {{person.name}} </p>
 <input type="text"required #nameInput = "ngModel" [(ngModel)]="person.name" >
